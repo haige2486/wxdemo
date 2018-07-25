@@ -1,0 +1,22 @@
+/* pages/booklist/booklist.wxss */
+.clearfix{
+  overflow: auto;
+  _height:1%; 
+}
+.top_nav{
+  text-align: center;
+}
+.book-item{
+  font-size: 28rpx;
+  padding: 30rpx 10rpx;
+  border-bottom: 1rpx solid #d7d7d7;
+}
+.book-item image{
+  width:150rpx;
+  height: 200rpx;
+  float:left;
+  margin-right: 20rpx;
+}
+.book-item .text{
+  float:left;
+}

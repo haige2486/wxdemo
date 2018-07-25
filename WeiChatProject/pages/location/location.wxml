@@ -1,0 +1,53 @@
+<!--pages/location/location.wxml-->
+<view>
+  <view class='topNav'>
+    地址管理
+  </view>
+  <view class='address'>
+    <view  wx:if="{{defaultAddress}}">
+    <view class='defaultAddress'>当前默认地址(上门地址)</view>
+      <view><text>{{userName}}</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text>{{phoneNumber}}</text></view>
+      <view class='defaultAddress'>{{address}}</view>
+    </view>
+    <view wx:else>
+       <view class='defaultAddress'>当前默认地址</view>
+       <view class='noAddress'>还没有默认地址哦</view>
+    </view>
+   <view>
+   
+   </view>
+  </view>
+  <view class='getAddress'>
+    上门地址
+  </view>
+  <view  wx:if="{{defaultAddress}}" class='addressM'>
+    <radio-group class="group" bindchange='radioChange'>
+      <view class='addressMt' wx:for='{{userInfo}}' wx:for-item="item" wx:key="item.userName" >
+        <view class='user'><text>{{item.userName}}</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text>{{item.phoneNumber}}</text></view>
+        <view>{{item.location}}{{item.detailAddress}}</view>
+        <view class='chance'>
+          <view class="attr_value">
+              <radio color='' checked="{{item.isSelected?'checked':''}}" data-index='{{index}}' bindtap='getIndex'></radio>
+              <label class='radio_label'>选择该地址</label>
+          </view>
+          <view class='opera'>
+            <text class='editor' data-id='{{item.id}}' bindtap='editor'>编辑</text>
+            <text class='delete' data-index='{{index}}' bindtap='remove'>删除</text>
+          </view>
+        </view>
+      </view>
+    </radio-group>
+  </view>
+  <view wx:else class='noAddress'>
+    <view class='image'>
+      <image src='/images/location.png'></image>
+    </view>
+    <view>
+      <text>还没有地址哦</text>
+    </view>
+    <view>
+      <text>点击下方按钮可新建地址</text>
+    </view>
+  </view>
+  <view class='addAddress' bindtap='addNewAddress'>新增地址</view>
+</view>

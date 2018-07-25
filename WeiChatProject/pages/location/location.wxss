@@ -1,0 +1,86 @@
+/* pages/location/location.wxss */
+.topNav{
+  text-align: center;
+  font-size:30rpx;
+  line-height:2;
+}
+.address{
+  background-color: #0073e6;
+  color:#fff;
+  height: 200rpx;
+  font-size:28rpx;
+  padding-left: 30rpx;
+}
+.defaultAddress{
+  text-align: left;
+  font-weight: bold;
+  line-height: 3;
+}
+.noAddress{
+  text-align: center;
+  font-size: 28rpx;
+}
+.noAddress .image{
+  margin-top:150rpx;
+  margin-bottom:150rpx;
+}
+.noAddress image{
+  display: block;
+  margin:0 auto;
+  width:100rpx;
+  height:100rpx;
+}
+.getAddress{
+  background: #eee;
+  text-align: center;
+  line-height: 2;
+  font-size: 28rpx;
+}
+.addressM{
+  font-size: 28rpx;
+  font-weight: normal;
+  padding-left:30rpx;
+  padding-right: 30rpx;
+}
+.addressMt{
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+  border-bottom:1rpx solid #d7d7d7;
+}
+.addAddress{
+  width:90%;
+  margin:0 auto;
+  text-align: center;
+  background-color: #0073e6;
+  color:#fff;
+  line-height: 1.5;
+  position:fixed;
+  bottom:50rpx;
+  left:5%;
+}
+
+.attr_value {
+  float: left;
+  margin-right:20rpx;
+  position: relative;
+}
+.chance{
+
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}
+radio{
+  float:left;
+}
+.radio_label{
+      float: left;
+      padding:0 24rpx;
+      height: 40rpx;
+      line-height: 40rpx;
+}
+.opera{
+  float:right;
+}
+.delete{
+  margin-left:20rpx;
+}

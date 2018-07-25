@@ -1,0 +1,77 @@
+/**addnewaddress.wxss**/
+textarea{
+  height:auto;
+}
+.clearfix{
+  overflow: auto;
+  _height:1%; 
+}
+.topNav{
+  text-align: center;
+  font-size:30rpx;
+  line-height:2;
+}
+.form{
+  font-size:28rpx;
+}
+.part{
+  border-bottom: 1rpx solid #d9d9d9;
+}
+input {
+  padding: 20rpx 20rpx;
+}
+.form .left_label{
+  width:20%;
+  float:left;
+  padding:20rpx 0 20rpx 15rpx;
+}
+.form textarea{
+  width:500rpx;
+  float: left;
+  min-height: 60rpx;
+  padding: 20rpx 20rpx;
+}
+.btn-area{
+  padding:0 5%;
+  margin-top:50rpx;
+}
+.btn-area button{
+  background-color: #0073e6;
+  color:#fff;
+}
+.input {
+  float: left;
+  width: 70%;
+  padding-top:20rpx;
+}
+.input input {
+  width: 100%;
+  /**background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;**/
+  padding: 20rpx 20rpx;
+}
+
+.section {
+  padding-top: 20rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200rpx;
+}
+.citypicker .cityheader view{
+  float:left;
+  width:50%;
+  text-align: center;
+}

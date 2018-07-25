@@ -1,0 +1,95 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx51fb081c1f8ff741",
+	"projectname": "WeiChatProject",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "列表页",
+					"pathName": "pages/list/list",
+					"query": "",
+					"scene": "1025"
+				},
+				{
+					"id": -1,
+					"name": "详情页",
+					"pathName": "pages/details/details",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "购物车",
+					"pathName": "pages/shopcart/shopcart",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "加入购物车",
+					"pathName": "pages/add/add",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "马上借",
+					"pathName": "pages/lendnow/lendnow",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "新增地址",
+					"pathName": "pages/location/location",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加新地址",
+					"pathName": "pages/addnewaddress/addnewaddress",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "加载",
+					"pathName": "pages/viewbookinfo/viewbookinfo",
+					"query": "",
+					"scene": "1047"
+				},
+				{
+					"id": 8,
+					"name": "加载new",
+					"pathName": "pages/viewinfo/viewinfo",
+					"query": "",
+					"scene": "1047"
+				}
+			]
+		}
+	}
+}

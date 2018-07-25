@@ -1,0 +1,121 @@
+/* pages/details/details.wxss */
+page{
+  font-size: 28rpx;
+}
+.container{
+  padding:0;
+}
+.items-list{
+  margin-bottom: 46px;
+}
+.des{
+  padding:0 20rpx;
+}
+.des .pro-tile{
+    font-size: 30rpx;
+}
+.des .author{
+  color:red;
+  font-size: 26rpx;
+}
+.img-wrap{
+  position:relative;
+  width:750rpx;
+  height:500rpx;
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+.img-wrap .opa{
+  position: absolute;
+  width:100%;
+  height:100%;
+  background: url('https://img.alicdn.com/imgextra/i4/672109898/TB2NkNSfIyYBuNkSnfoXXcWgVXa_!!672109898-0-item_pic.jpg_430x430q90.jpg') no-repeat -10rpx -10rpx; 
+  z-index: 8;
+  opacity: 0.5;
+}
+.img-wrap image{
+  width:400rpx;
+  height:450rpx;
+  z-index: 10;
+}
+.content{
+   padding:0 20rpx;
+   margin-top:20rpx;
+}
+.content .introduc{
+    font-size: 24rpx;
+    color:red;
+}
+.content .inner-inc{
+  height: 200rpx;
+  overflow: hidden;
+}
+.content .inner-inc1{
+  height: auto;
+}
+.content .checkShow{
+  font-size: 24rpx;
+  width:150rpx;
+  border: none;
+  line-height: 1.5;
+}
+.bottom_fixed {
+  position:fixed;
+  padding:0 20rpx;
+  bottom:0;
+  width:100%;
+  height:46px;
+  background-color: #fff;
+  box-shadow: 0rpx 2rpx 6rpx 2rpx #ccc inset;
+}
+.bottom_inner{
+  width:93%;
+  height:46px;
+  margin:0 auto;
+}
+.bottom_fixed .shopCart{
+  margin-top: 10rpx;
+  float: left;
+  width:200rpx;
+  position: relative;
+}
+.bottom_fixed .shopCart image{
+  margin-left: 10rpx;
+}
+.bottom_fixed .lend{
+  margin-left:-10rpx;
+}
+.bottom_fixed .add, .bottom_fixed .buy{
+  display: inline-block;
+}
+.bottom_inner .bookNum{
+  position: absolute;
+  top:0;
+  left:30rpx;
+  padding:0 10rpx;
+  border-radius: 10rpx;
+  background-color: red;
+  color:#fff;
+  font-size: 20rpx;
+}
+.bottom_fixed .add{
+  padding:10rpx 20rpx;
+  background: orange;
+  color:#fff;
+  margin-top:20rpx;
+  border-radius: 10rpx;
+}
+.bottom_fixed .buy{
+  float: right;
+  padding:10rpx 20rpx;
+  background: red;
+  color:#fff;
+  margin-top:20rpx;
+  border-radius: 10rpx;
+}
+.shopping-cart{
+  width:40rpx;
+  height:40rpx;
+  display: block;
+}

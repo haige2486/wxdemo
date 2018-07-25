@@ -1,0 +1,50 @@
+<!--pages/details/details.wxml-->
+<view class='container'>
+<view class='items-list'>
+  <view wx:for="{{bookDetail}}">
+    <view>
+      <view class='img-wrap'>
+        <image src='{{item.src}}'></image>
+      </view>
+      <view class='des'>
+        <view>
+          <text class='pro-tile'>{{item.bookName}}</text>
+        </view>
+        <view>
+          <text class='pro-desc'><text class='author'>作者：</text>{{item.author}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view>
+      <text class='introduc' >简介和目录</text>
+      <view  class="{{isChecked ? 'inner-inc1': 'inner-inc'}}">
+      <text>
+      善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。\n善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。\n善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。善良是一种天性，善意是一种选择。\n</text>
+      <text>第一章\n第二章\n第三章\n第四章\n第五章</text>
+      </view>
+       <button class='checkShow' bindtap='checkShow' data-num = '{{num}}'>{{show}}</button>
+    </view>
+    <view>
+      <text class='introduc'>宝贝评论</text>
+      <view>
+      <text>评论1：善良是一种天性，善意是一种选择。\n</text>
+      <text>评论2：善良是一种天性，善意是一种选择。\n</text>
+      <text>评论3：善良是一种天性，善意是一种选择。\n</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='bottom_fixed'>
+  <view class='bottom_inner'>
+    <view class='shopCart' bindtap='skipCart'>
+      <image class='shopping-cart' src='/images/shopping-cart.png'></image>
+      <text class='lend'>借阅车</text>
+      <text class='bookNum'>{{totalCount}}</text>
+    </view>
+    <view class='add' id='{{isbn}}' bindtap='add'>加入借阅车</view>
+    <view class='buy' data-id='{{isbn}}' bindtap='lendNow'>马上借</view>
+  </view>
+</view>
+</view>

@@ -1,0 +1,22 @@
+<!--pages/booklist/booklist.wxml-->
+<view>
+  <view class='top_nav'>借阅列表</view>
+  <view>
+    <view  wx:if="{{isbn}}" class='book-item clearfix'>
+      <image src='{{src}}'></image>
+      <view class='text'>
+        <view>{{bookName}}</view>
+        <view>{{author}}</view>
+      </view>
+    </view>
+    <view  wx:else>
+      <view class='book-item clearfix' wx:for="{{cart}}">
+        <image src='{{item.src}}'></image>
+        <view>
+          <view class='bookName'>{{item.bookName}}</view>
+          <view class='author'>{{item.author}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

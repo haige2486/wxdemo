@@ -1,0 +1,52 @@
+<!--pages/lendnow/lendnow.wxml-->
+<view class='container'>
+  <view class='topBar'>借阅</view>
+  <view class='mrb20 pdl30 bgPink'>下单完成后,请在15分钟内付款</view>
+  <view class='mrb20 clearfix' id='location'  bindtap='setLocation'>
+    <view class='location'>
+      <image src='/images/location.png'></image>
+    </view>
+    <view class='address' wx:if="{{defaultAddress}}">
+      <view class='userName'><text>{{userName}}</text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text>{{phoneNumber}}</text></view>
+      <view class='userLocation'>{{address}}</view>
+      <view class='blue'>(点击更换送书地址)</view>
+    </view>
+    <view wx:else>
+      <view class='userName'>测试</view>
+      <view class='userLocation'>您还未设置送书地址，立即设置</view>
+      <view class='blue'>(点击更换送书地址)</view>
+    </view>
+    <view class='arrow'>
+      <image src='/images/right_arrow.png'></image>
+    </view>
+  </view>
+  <view class='mrb20 bookInfo clearfix' bindtap='viewBookInfo'>
+    <view class='left'  wx:if="{{isbn}}">
+      <image src='{{src}}'></image>
+      <text>{{bookName}}</text>
+    </view>
+    <view class='left' wx:else>
+      <view class='book-item' wx:for="{{cart}}" style='float:left;'>
+        <image src='{{item.src}}'></image>
+        <text class='bookName'>{{item.bookName}}</text>
+      </view>
+    </view>
+    <view class='right'>
+      <text>共{{num}}本</text>
+      <image src='/images/right_arrow.png'></image>
+    </view>
+  </view>
+  <view class='mrb20 pdl30' id='lending_fee'>借阅费
+      <text class='tip'>(借期60天，前20天免费)</text><text class='no_fee'>免费</text>
+  </view>
+  <view class='mrb20 pdl30' id='freight'>运费
+    <image src='/images/question.png'></image>
+    <text>￥0.00</text>
+  </view>
+  <view class='pdl30 bottom'>
+    <view class='total'>
+      <view>总计：<text>￥3.00</text></view>    
+    </view>
+    <view class='balance'>结算</view>
+  </view>
+</view>
