@@ -24,6 +24,6 @@
       <image id='{{item.isbn}}' class='shopping-cart' src='/images/shopping-cart.png' catchtap='addCart'></image>
     </view>
   </view>
-  <view bindtap='text'>请求数据</view>
+  <view bindtap='text'>请求数据222</view>
   <view class='skipCart'><navigator url="/pages/shopcart/shopcart?title=navigate"><image src='/images/shopping-cart.png'></image></navigator></view>
 </view>
